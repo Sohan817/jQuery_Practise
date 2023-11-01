@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jQuery</title>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <h1>jQuery Practise</h1>
+    <div id="test1">
+      <h1>Test 1</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa nam natus
+        perspiciatis veniam illum atque sapiente, eum dignissimos velit corrupti
+        quasi suscipit accusamus inventore! Explicabo eius nisi consectetur
+        minima nobis.
+      </p>
+    </div>
+    <div id="test2">
+      <h1>Test 2</h1>
+      <p>Lorem, ipsum dolor.</p>
+    </div>
+    <script>
+      $(document).ready(function () {
+        var a = $("#test1").html();
+        console.log(a);
+        var b = $("#test2").html();
+        console.log(b);
+      });
+    </script>
+  </body>
+</html>
