@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>jQuery</title>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <h1>jQuery Practise</h1>
+    <div id="box" class="test">
+      <h1>Test 1</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa nam natus
+        perspiciatis veniam illum atque sapiente, eum dignissimos velit corrupti
+        quasi suscipit accusamus inventore! Explicabo eius nisi consectetur
+        minima nobis.
+      </p>
+    </div>
+    <script>
+      $(document).ready(function () {
+        //Click Event
+        $("#box").click(function () {
+          $("#box").css("background-color", "green");
+          var a = $("#box").html();
+          console.log(a);
+        });
+        //double click
+        $("#box").dblclick(function () {
+          $("#box").css("background-color", "orange");
+        });
+        //Context menu
+        $("#box").contextmenu(function () {
+          $("#box").css("background-color", "blue");
+        });
+        //Mouse Enter
+        $("#box").mouseenter(function () {
+          $("#box").css("background-color", "tan");
+        });
+        //Mouse Leave
+        $("#box").mouseleave(function () {
+          $("#box").css("background-color", "pink");
+        });
+      });
+    </script>
+  </body>
+</html>
