@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>jQuery</title>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <h1>jQuery Practise</h1>
+    <form action="" id="sform">
+      <label for="sname">Name:</label>
+      <input type="text" id="sname" autocomplete="off" />
+      <br /><br />
+      <label for="sclass">Class:</label>
+      <input type="text" id="sclass" autocomplete="off" />
+      <br /><br />
+      <label for="scountry">Country</label>
+      <select name="" id="scountry">
+        <option value="Bangladesh">Bangladesh</option>
+        <option value="India">India</option>
+        <option value="Pakistan">Pakistan</option>
+        <option value="Afginastam">Afganistan</option>
+        <option value="Austrelia">Austrelia</option>
+      </select>
+      <br /><br />
+      <input type="submit" />
+    </form>
+    <div id="divid"></div>
+    <script>
+      $(document).ready(function () {
+        //focus event
+        $("#sname,#sclass,#scountry").focus(function () {
+          $(this).css("background-color", "yellow");
+        });
+        //blur Event
+        $("#sname,#sclass,#scountry").blur(function () {
+          $(this).css("background-color", "");
+        });
+        //change Event
+        $("#scountry").change(function () {
+          var a = $(this).val();
+          $("#divid").html(a);
+        });
+        //Select Event
+        $("#sname,#sclass").select(function () {
+          $(this).css("background-color", "red");
+        });
+        //Submit Event
+        $("#sform").submit(function () {
+          alert("Form Submitted");
+        });
+      });
+    </script>
+  </body>
+</html>

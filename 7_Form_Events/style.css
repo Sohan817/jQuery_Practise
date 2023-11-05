@@ -1,0 +1,9 @@
+.test {
+  background: pink;
+  padding: 10px;
+  border: 1px solid #000;
+}
+#divid {
+  border: 1px solid red;
+  margin-top: 20px;
+}
