@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>jQuery</title>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <h1>jQuery Practise</h1>
+    <div id="text">
+      <h3>Text Box</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus
+        similique perferendis hic odit eaque voluptate. Velit enim dicta unde,
+        fuga recusandae qui ut perferendis optio quia autem alias cumque
+        expedita?
+      </p>
+    </div>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae
+      molestiae nulla aspernatur, ad architecto enim at doloribus odit quidem
+      suscipit adipisci saepe explicabo sed, sapiente, praesentium recusandae
+      quae ex? Reiciendis.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae
+      molestiae nulla aspernatur, ad architecto enim at doloribus odit quidem
+      suscipit adipisci saepe explicabo sed, sapiente, praesentium recusandae
+      quae ex? Reiciendis.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae
+      molestiae nulla aspernatur, ad architecto enim at doloribus odit quidem
+      suscipit adipisci saepe explicabo sed, sapiente, praesentium recusandae
+      quae ex? Reiciendis.
+    </p>
+    <script>
+      $(document).ready(function () {
+        //scroll event
+        $(window).scroll(function () {
+          console.log("You are scrolling");
+        });
+        $("#text").scroll(function () {
+          console.log("You are scrolling");
+        });
+        //resize event
+        $(window).resize(function () {
+          console.log("You are resizing");
+        });
+      });
+    </script>
+  </body>
+</html>
