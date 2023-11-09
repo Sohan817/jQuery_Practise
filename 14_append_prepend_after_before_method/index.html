@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>jQuery</title>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <h1>jQuery Practise</h1>
+    <div id="box" class="abc">
+      <h3>Text Box</h3>
+      <p>Lorem, ipsum dolor.</p>
+    </div>
+    <br />
+    <button id="appendbutton">Append</button>
+    <button id="prependbutton">Prepend</button>
+    <button id="afterbutton">After</button>
+    <button id="beforebutton">Before</button>
+
+    <script>
+      $(document).ready(function () {
+        $("#appendbutton").click(function () {
+          $("#box").append("<h2>Shohan</h2>");
+        });
+        $("#prependbutton").click(function () {
+          $("#box").prepend("<h2>Shohan</h2>");
+        });
+        $("#afterbutton").click(function () {
+          $("#box").after("<h2>Nadim</h2> <p>This is Nadim</p>");
+        });
+        $("#beforebutton").click(function () {
+          $("#box").before("<h2>Nadim</h2> <p>This is Nadim</p>");
+        });
+      });
+    </script>
+  </body>
+</html>
