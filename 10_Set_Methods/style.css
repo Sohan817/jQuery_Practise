@@ -1,0 +1,10 @@
+#text {
+  width: 40%;
+  height: 100px;
+  background: pink;
+  padding: 10px;
+  border: 1px solid #000;
+}
+.red {
+  color: red;
+}

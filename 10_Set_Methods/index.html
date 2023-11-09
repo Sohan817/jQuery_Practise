@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>jQuery</title>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <h1>jQuery Practise</h1>
+    <div id="text" class="abc">
+      <h3>Text Box</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus
+        similique perferendis hic odit eaque voluptate. Velit enim dicta unde,
+        fuga recusandae qui ut perferendis optio quia autem alias cumque
+        expedita?
+      </p>
+    </div>
+    <br />
+    <button id="btn">Change</button>
+    <br /><br />
+    <form action="" id="sform">
+      <label for="">Name:</label>
+      <input type="text" id="sname" />
+      <br /><br />
+      <label for="">Class:</label>
+      <input type="text" id="sclass" />
+      <br /><br />
+      <button id="btn1">Submit</button>
+    </form>
+    <script>
+      $(document).ready(function () {});
+    </script>
+    <script>
+      $(document).ready(function () {
+        $("#btn").click(function () {
+          $("#text h3").text("Hello Sohan");
+          //$("#text p").text("This is new text");
+          $("#text p").html("This is <b>new text</b>");
+          $("#text h3").attr("class", "red");
+        });
+        $("#sname").val("Sohan");
+        $("#sclass").val("B.sc");
+      });
+    </script>
+  </body>
+</html>
