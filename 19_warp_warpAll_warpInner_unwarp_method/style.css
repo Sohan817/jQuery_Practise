@@ -1,0 +1,30 @@
+/* #box {
+  width: 40%;
+  height: 200px;
+  background: pink;
+  padding: 10px;
+  border: 1px solid #000;
+} */
+#box2 {
+  width: 40%;
+  height: 100px;
+  background: pink;
+  padding: 10px;
+  border: 1px solid #000;
+}
+.first {
+  background-color: red;
+}
+.second {
+  background-color: aqua;
+}
+#test {
+  width: 40%;
+  height: 200px;
+  background: red;
+  padding: 10px;
+  border: 1px solid #000;
+}
+#htest {
+  background: red;
+}
