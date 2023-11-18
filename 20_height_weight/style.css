@@ -1,0 +1,7 @@
+#box {
+  width: 50%;
+  height: 200px;
+  background: pink;
+  padding: 10px;
+  border: 20px solid #000;
+}

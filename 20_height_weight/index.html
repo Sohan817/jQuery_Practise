@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>jQuery</title>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <h1 id="htest1">jQuery Practise</h1>
+    <div id="box">
+      <h3>Text Box</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, modi
+        officiis cumque sit aspernatur quis, inventore enim, provident tenetur
+        eius maiores! Explicabo pariatur delectus quibusdam nam ipsa sapiente,
+        eaque consequatur!
+      </p>
+    </div>
+    <br /><br />
+    <button id="heightbtn">Height</button>
+    <button id="widthbtn">Width</button>
+    <button id="innerHeightbtn">InnerHeight</button>
+    <button id="innerwidth">InnerWidth</button>
+    <button id="outerHeightbtn">InnerHeight</button>
+    <button id="outerWidth">InnerWidth</button>
+    <script>
+      $(document).ready(function () {
+        // $("#heightbtn").click(function () {
+        //   console.log($("#box").height());
+        // });
+        // $("#widthbtn").click(function () {
+        //   console.log($("#box").width());
+        // });
+        $("#innerHeightbtn").click(function () {
+          console.log($("#box").innerHeight());
+        });
+        $("#innerwidth").click(function () {
+          console.log($("#box").innerWidth());
+        });
+        $("#outerHeightbtn").click(function () {
+          console.log($("#box").outerHeight());
+        });
+        $("#outerWidth").click(function () {
+          console.log($("#box").outerWidth());
+        });
+        $("#heightbtn").click(function () {
+          $("#box").height(500);
+        });
+        $("#widthbtn").click(function () {
+          $("#box").width(1000);
+        });
+      });
+    </script>
+  </body>
+</html>
