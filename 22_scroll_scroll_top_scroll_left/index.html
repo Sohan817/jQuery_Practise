@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>jQuery</title>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <h1 id="htest1">jQuery Practise</h1>
+
+    <h3>Text Box</h3>
+    <button id="scrolltop">Scroll Top</button> <br />
+    <div id="box"></div>
+    <br /><br /><br />
+    <button id="scrollleft">Scroll Left</button>
+    <br />
+    <p id="paragraph">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, accusantium
+      laborum eius numquam impedit aperiam harum, ea in recusandae omnis
+      incidunt corrupti, nihil sit doloribus perferendis praesentium quam
+      ducimus inventore! Lorem, ipsum dolor sit amet consectetur adipisicing
+      elit. Mollitia, officiis id? Nostrum minus explicabo ab vero esse
+      voluptate voluptatem possimus unde, accusamus, ratione aspernatur dolores
+      nesciunt labore deserunt molestiae veniam? Lorem ipsum dolor sit amet
+      consectetur adipisicing elit. Architecto nemo maiores omnis, consequatur,
+      repellendus dolorum fugiat expedita aliquam sed perferendis molestias
+      nobis laboriosam qui, culpa cupiditate? Saepe nemo assumenda repellendus?
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi deserunt
+      praesentium culpa at illum debitis, ipsam quo dolorum a autem ratione
+      perspiciatis quasi quod voluptas? Vel distinctio repellendus alias
+      iusto?Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      Consequuntur totam, hic expedita odit natus eos perspiciatis quam ut quae,
+      provident exercitationem voluptate repellat ea doloremque. Eligendi nam
+      vero odit odio. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+      Quisquam quis consequatur provident consectetur placeat nostrum ex quia
+      accusamus accusantium unde et blanditiis molestiae dolor doloribus
+      consequuntur incidunt, ut aut deserunt autem! Nobis non repellendus vitae
+      suscipit blanditiis facere, cum, totam tempora distinctio voluptates optio
+      labore necessitatibus ea assumenda maiores delectus?Lorem ipsum dolor sit
+      amet consectetur adipisicing elit. Aliquam sapiente saepe maiores placeat
+      deserunt quia rerum libero expedita voluptas iste voluptatibus similique,
+      rem quam amet dignissimos beatae est odio quaerat. Lorem ipsum dolor sit
+      amet consectetur adipisicing elit. Aut saepe reiciendis aperiam accusamus
+      eum voluptates voluptate animi, veritatis voluptatibus quod repellendus et
+      nihil assumenda reprehenderit eligendi ipsa ex molestiae labore?
+    </p>
+
+    <script>
+      $(document).ready(function () {
+        var a = $(window).scrollTop();
+        var b = $(window).scrollLeft();
+        console.log(a);
+        console.log(b);
+        $(window).scroll(function () {
+          $("#box").html("");
+          $("#box").append("Top: " + a);
+          $("#box").append(" <br>Left: " + b);
+        });
+        $("#scrolltop").click(function () {
+          $(window).scrollTop(100);
+        });
+        $("#scrollleft").click(function () {
+          $(window).scrollLeft(50);
+        });
+      });
+    </script>
+  </body>
+</html>

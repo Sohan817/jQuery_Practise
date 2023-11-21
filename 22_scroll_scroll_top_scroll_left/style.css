@@ -1,0 +1,17 @@
+#box {
+  width: 10%;
+  height: 30px;
+  background: pink;
+  padding: 10px;
+  border: 1px solid #000;
+  position: fixed;
+}
+#paragraph {
+  width: 300px;
+}
+#scrolltop {
+  position: fixed;
+}
+#scrollleft {
+  position: fixed;
+}
