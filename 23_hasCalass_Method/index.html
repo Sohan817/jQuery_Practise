@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>jQuery</title>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <h1 id="htest1">jQuery Practise</h1>
+    <div id="box" class="test">
+      <h3>Text Box</h3>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur
+        amet autem odio at in, ducimus magni sunt molestias exercitationem? Eum
+        perspiciatis unde ipsum laboriosam totam iusto qui pariatur,
+        exercitationem velit?
+      </p>
+    </div>
+    <br />
+    <button id="hasClass">Has Class</button>
+    <script>
+      $(document).ready(function () {
+        $("#hasClass").click(function () {
+          var x = $("#box").hasClass("test");
+          if (x === true) {
+            console.log("Yes");
+          } else {
+            console.log("No");
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
