@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>jQuery</title>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <h1 id="htest1">jQuery Practise</h1>
+    <div id="box" class="test">
+      <h3>Text Box</h3>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur
+        amet autem odio at in, ducimus magni sunt molestias exercitationem? Eum
+        perspiciatis unde ipsum laboriosam totam iusto qui pariatur,
+        exercitationem velit?
+      </p>
+    </div>
+    <br />
+    <button id="hideBtn">Hide</button>
+    <button id="showBtn">Show</button>
+    <button id="toggleBtn">Toggle</button>
+    <script>
+      $(document).ready(function () {
+        // $("#hideBtn").click(function () {
+        //   $("#box p").hide("slow");
+        // });
+        //Hide with timer value
+        $("#hideBtn").click(function () {
+          $("#box p").hide(1000);
+        });
+        //Hide with timer value and callback function
+        $("#hideBtn").click(function () {
+          $("#box p").hide(1000, function () {
+            console.log("Now its Hidden");
+          });
+        });
+        $("#showBtn").click(function () {
+          $("#box p").show("fast");
+        });
+        //Toggle btn
+        $("#toggleBtn").click(function () {
+          $("#box p").toggle(1000, function () {
+            console.log("Toggled");
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
