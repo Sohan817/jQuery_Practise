@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>jQuery</title>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <h1 id="htest1">jQuery Practise</h1>
+    <div id="box" class="test">
+      <h3>Text Box</h3>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur
+        amet autem odio at in, ducimus magni sunt molestias exercitationem? Eum
+        perspiciatis unde ipsum laboriosam totam iusto qui pariatur,
+        exercitationem velit?
+      </p>
+    </div>
+    <br />
+    <button id="fadeOutBtn">Fade Out</button>
+    <button id="fadeInBtn">Show</button>
+    <button id="fadeToggleBtn">Toggle</button>
+    <button id="fadeToBtn">Fade To</button>
+    <script>
+      $(document).ready(function () {
+        // $("#fadeOutBtn").click(function () {
+        //   $("#box p").fadeOut("slow");
+        // });
+        //Fade out with timer value
+        $("#fadeOutBtn").click(function () {
+          $("#box p").fadeOut(1000);
+        });
+        //Fade out with timer value and callback function
+        $("#fadeOutBtn").click(function () {
+          $("#box p").fadeOut(1000, function () {
+            console.log("Now its Faded Out");
+          });
+        });
+        $("#fadeInBtn").click(function () {
+          $("#box p").fadeIn("fast");
+        });
+        //Toggle btn
+        $("#fadeToggleBtn").click(function () {
+          $("#box p").fadeToggle(1000, function () {
+            console.log("Toggled");
+          });
+        });
+        //Fade To
+        $("#fadeToBtn").click(function () {
+          $("#box p").fadeTo(1000, 0.5, function () {
+            console.log("Fade To");
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
