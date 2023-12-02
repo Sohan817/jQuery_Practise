@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>jQuery</title>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <h1 id="htest1">jQuery Practise</h1>
+    <div id="box" class="test">
+      <h3>Text Box</h3>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur
+        amet autem odio at in, ducimus magni sunt molestias exercitationem? Eum
+        perspiciatis unde ipsum laboriosam totam iusto qui pariatur,
+        exercitationem velit?
+      </p>
+    </div>
+    <br />
+    <button id="slideUpBtn">Slide Up</button>
+    <button id="slideDownBtn">Slide Down</button>
+    <button id="slideToggleBtn">Slide Toggle</button>
+    <script>
+      $(document).ready(function () {
+        // $("#slideUpBtn").click(function () {
+        //   $("#box").slideUp("slow");
+        // });
+        //Slide up with timer value
+        $("#slideUpBtn").click(function () {
+          $("#box").slideUp(1000, function () {
+            console.log("Slide Up");
+          });
+        });
+        //Slide down with timer value
+        $("#slideDownBtn").click(function () {
+          $("#box").slideDown(1000, function () {
+            console.log("Slide Down");
+          });
+        });
+        //Slide down with timer value
+        $("#slideDownBtn").click(function () {
+          $("#box").slideDown("slow");
+        });
+        //Slide toggle with timer value and callback function
+        $("#slideToggleBtn").click(function () {
+          $("#box").slideToggle(1000, function () {
+            console.log("Slide Toggle");
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
