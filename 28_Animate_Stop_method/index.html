@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>jQuery</title>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <h1 id="htest1">jQuery Practise</h1>
+    <div id="box" class="test">
+      <h3>Animated Method</h3>
+      <p>Shohan</p>
+    </div>
+    <br />
+    <button id="animateBtn">Animate</button>
+    <button id="stopBtn">Stop</button>
+    <script>
+      $(document).ready(function () {
+        //Animate seperately
+        $("#animateBtn").click(function () {
+          $("#box").animate(
+            {
+              left: "200px",
+            },
+            2000
+          );
+          $("#box").animate({
+            fontSize: "20px",
+          });
+        });
+        $("#stopBtn").click(function () {
+          $("#box").stop(true, true);
+        });
+      });
+    </script>
+  </body>
+</html>
