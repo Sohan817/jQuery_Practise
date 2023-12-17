@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>jQuery</title>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <h1 id="htest1">Descendants Methods</h1>
+    <div id="mainouter">
+      <h3>Main Outer</h3>
+      <div id="outer">
+        <h3>Outer</h3>
+        <div id="inner">
+          <h3>Inner</h3>
+          <div>A</div>
+          <div>B</div>
+          <div id="child-c">C</div>
+          <div>D</div>
+        </div>
+      </div>
+    </div>
+    <br />
+    <script>
+      $(document).ready(function () {
+        //Children Method
+        //$("#outer").children().css("background", "red");
+        //Find Method
+        //$("#inner").find("#child-c").css("background", "red");
+        $("#outer").find("#inner").css("background", "red");
+      });
+    </script>
+  </body>
+</html>
