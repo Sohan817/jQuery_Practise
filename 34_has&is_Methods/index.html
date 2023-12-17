@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>jQuery</title>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <h1>Filter Methods</h1>
+    <div id="first">
+      <p>
+        Lorem ipsum dolor sit amet consectetur
+        <b
+          >adipisicing elit. Quisquam, esse voluptas est nemo in eaque odio
+          vitae,</b
+        >
+        nam expedita dicta consequuntur
+        <span
+          >voluptates, ad aspernatur. Ducimus id omnis cum numquam
+          quaerat.</span
+        >
+      </p>
+      <p id="test">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non, maxime
+        odio. Quas cupiditate unde minima id iste est voluptate eaque fuga
+        corporis eveniet quod harum, a ab veniam soluta dignissimos?
+      </p>
+    </div>
+    <ul>
+      <li>Apple</li>
+      <li>Banana</li>
+      <li>Orange</li>
+      <li>Mango</li>
+    </ul>
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+      <span>
+        Vitae facere, velit dolore nam ea ratione culpa! Dolorem quod, minus,
+        eaque architecto ab ducimus veniam corporis aspernatur unde velit cumque
+        sunt?</span
+      >
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem temporibus
+      repellat esse, labore unde aperiam qui iure eum placeat facere cumque?
+      Mollitia, a voluptate. Blanditiis, saepe consequatur. Neque, minima id.
+    </p>
+    <br />
+    <script>
+      $(document).ready(function () {
+        //Has Method
+        $("p").has("b", "span").css("background", "red");
+        //is Method
+        $("p").click(function () {
+          if ($(this).parent().is("div")) {
+            $(this).css("background", "gold");
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
