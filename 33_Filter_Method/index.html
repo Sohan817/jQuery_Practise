@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>jQuery</title>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <h1>Filter Methods</h1>
+    <div id="first">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, esse
+        voluptas est nemo in eaque odio vitae, nam expedita dicta consequuntur
+        voluptates, ad aspernatur. Ducimus id omnis cum numquam quaerat.
+      </p>
+      <p id="test">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non, maxime
+        odio. Quas cupiditate unde minima id iste est voluptate eaque fuga
+        corporis eveniet quod harum, a ab veniam soluta dignissimos?
+      </p>
+    </div>
+    <ul>
+      <li>Apple</li>
+      <li>Banana</li>
+      <li>Orange</li>
+      <li>Mango</li>
+    </ul>
+    <div id="second">
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae facere,
+        velit dolore nam ea ratione culpa! Dolorem quod, minus, eaque architecto
+        ab ducimus veniam corporis aspernatur unde velit cumque sunt?
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
+        temporibus repellat esse, labore unde aperiam qui iure eum placeat
+        facere cumque? Mollitia, a voluptate. Blanditiis, saepe consequatur.
+        Neque, minima id.
+      </p>
+    </div>
+    <br />
+    <script>
+      $(document).ready(function () {
+        //First Method
+        //$("p").first().css("background", "red");
+        //Last Method
+        //$("p").last().css("background", "red");
+        //Equation Method
+        //$("li").eq(2).css("background", "red");
+        //Filter Method
+        //$("p").filter("#test").css("background", "red");
+        //Not Method
+        //$("div").not("#first").css("background", "red");
+        //Slice Method
+        $("li").slice(1, 3).css("background", "red");
+      });
+    </script>
+  </body>
+</html>
