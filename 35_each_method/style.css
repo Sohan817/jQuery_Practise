@@ -1,0 +1,14 @@
+#first {
+  width: 400px;
+  height: 200px;
+  background: pink;
+  padding: 2px;
+  border: 1px solid #000;
+}
+#second {
+  width: 400px;
+  height: 200px;
+  background: pink;
+  padding: 2px;
+  border: 1px solid #000;
+}
